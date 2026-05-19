@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
-# ---------------- LOAD ----------------
+# LOAD
 
 with open("model.pkl", "rb") as f:
     model = pickle.load(f)
@@ -13,7 +13,7 @@ with open("city_encoder.pkl", "rb") as f:
 with open("furnish_encoder.pkl", "rb") as f:
     furnish_encoder = pickle.load(f)
 
-# ---------------- UI ----------------
+# UI
 
 st.set_page_config(page_title="House Rent Prediction")
 
@@ -21,7 +21,7 @@ st.title("🏠 House Rent Prediction")
 
 st.write("Enter property details to estimate monthly rent.")
 
-# ---------------- INPUTS ----------------
+# INPUTS
 
 bhk = st.number_input("BHK", min_value=1, max_value=10, value=2)
 
@@ -39,13 +39,13 @@ furnishing = st.selectbox(
     ["Furnished", "Semi-Furnished", "Unfurnished"]
 )
 
-# ---------------- ENCODE ----------------
+# ENCODE 
 
 city_encoded = city_encoder.transform([city])[0]
 
 furnishing_encoded = furnish_encoder.transform([furnishing])[0]
 
-# ---------------- PREDICT ----------------
+# PREDICT
 
 if st.button("Predict Rent"):
 
