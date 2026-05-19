@@ -1,7 +1,7 @@
 # End_To_End_Data_Science_Project
 
 ## Company Name
-CODTECH IT SOLUTIONS
+CODTECH IT SOLUTIONS PRIVATE LIMITED
 
 ---
 
