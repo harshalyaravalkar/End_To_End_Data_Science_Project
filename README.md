@@ -72,9 +72,6 @@ CODTECH-Task3-House-Rent-Prediction/
 │
 ├── app.py
 ├── train_model.py
-├── model.pkl
-├── city_encoder.pkl
-├── furnish_encoder.pkl
 ├── rentdata.csv
 ├── requirements.txt
 └── README.md
