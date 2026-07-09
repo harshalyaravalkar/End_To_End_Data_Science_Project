@@ -10,14 +10,6 @@ This project focuses on building a machine learning based house rent prediction 
 
 House rent prediction is a practical regression problem where machine learning models are trained using historical housing data in order to estimate rental prices for different types of properties. Such systems can help tenants, landlords, and housing platforms better understand property pricing trends and make more informed decisions.
 
-For this project, a real-world House Rent dataset was used containing rental listings from multiple Indian cities including:
-- Bangalore
-- Chennai
-- Delhi
-- Hyderabad
-- Kolkata
-- Mumbai
-
 The dataset included several property-related features such as BHK count, property size, furnishing status, city, floor information, bathrooms, and rent amount. During preprocessing, only the most relevant and user-friendly features were selected for prediction in order to simplify the application and improve usability.
 
 The final features used for prediction were:
@@ -27,32 +19,9 @@ The final features used for prediction were:
 - Furnishing Status
 - Bathroom
 
-The first stage of the project involved data preprocessing and cleaning. Unnecessary columns were removed from the dataset to reduce complexity and improve model performance. Since some columns contained categorical text data such as city names and furnishing status, label encoding was applied to convert these values into numerical form suitable for machine learning algorithms.
+This project uses a House Rent dataset containing listings from major Indian cities. After cleaning and preprocessing the data, a Random Forest Regressor was trained to estimate monthly rent based on a few important property features.
 
-After preprocessing, the dataset was divided into training and testing sets using Scikit-learn’s `train_test_split` function. This allowed the model to learn patterns from training data and later evaluate performance using unseen testing data.
-
-For prediction, a `RandomForestRegressor` model was implemented. Random Forest is an ensemble machine learning algorithm that combines multiple decision trees to improve prediction accuracy and reduce overfitting. The model performed well on the structured housing dataset and was able to capture relationships between property features and rental prices.
-
-After training the model, it was saved using Python’s `pickle` module. Model serialization allowed the trained model to be reused directly inside the deployed web application without retraining each time the application runs.
-
-The deployment stage of the project was developed using Streamlit. Streamlit was used to create an interactive and user-friendly web interface where users can easily provide property details and receive rent predictions instantly.
-
-The application interface allows users to enter:
-- BHK count
-- property size in square feet
-- city
-- furnishing status
-- bathroom count
-
-Dropdown menus, sliders, and input fields were used to make the interface simple and easy to understand. Once the details are entered, the application predicts the estimated monthly rent value.
-
-This project demonstrates several important concepts related to machine learning and deployment, including:
-- data preprocessing
-- feature selection
-- categorical encoding
-- regression modeling
-- model serialization
-- web application deployment
+The Streamlit interface allows users to enter property details and instantly receive an estimated rent.
 
 The technologies used in this project include:
 - Python
@@ -145,29 +114,6 @@ Estimated Monthly Rent: ₹ 42,000
 
 <img width="853" height="768" alt="Screenshot 2026-05-20 000407" src="https://github.com/user-attachments/assets/a6cf3542-bb0a-443d-a243-f0986514ad01" />
 
-
----
-
-# Features of the Project
-
-- real-world housing dataset
-- data preprocessing and cleaning
-- label encoding for categorical data
-- Random Forest regression model
-- model serialization using pickle
-- interactive Streamlit web application
-- real-time rent prediction
-
----
-
-# Business Applications
-
-This type of prediction system can be useful for:
-- tenants comparing rental prices
-- landlords estimating rent values
-- housing and rental platforms
-- property analytics systems
-- real estate recommendation platforms
 
 ---
 
