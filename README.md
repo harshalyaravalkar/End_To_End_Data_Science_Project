@@ -1,33 +1,5 @@
 # End_To_End_Data_Science_Project
 
-## Company Name
-CODTECH IT SOLUTIONS PRIVATE LIMITED
-
----
-
-## Name
-Harshal Laxman Yaravalkar
-
----
-
-## Intern ID
-CTIS8789
-
----
-
-## Domain
-Data Science
-
----
-
-## Duration
-4 Weeks
-
----
-
-## Mentor
-Neela Santhosh Kumar
-
 ---
 
 # House Rent Prediction using Machine Learning and Streamlit
